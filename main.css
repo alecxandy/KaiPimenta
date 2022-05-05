@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*soma o o tamanho com o padin e margin*/
+    color: #a09038;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Tapestry', cursive;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: url(fundocontador.jpg) no-repeat;
+    background-position: center fixed;
+    background: cover;
+}
+
+.container {
+    text-align: center;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.form button {
+    width: 15%;
+    margin: 0 auto;
+}
