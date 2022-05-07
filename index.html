@@ -16,7 +16,7 @@
 
 <body>
 
-    <head>
+    <header>
         <div>
             <img src="csharp.png" alt="Logo da Nike" width="60px" height="60px">
         </div>
@@ -27,17 +27,17 @@
                 <a target="_blank" href="https://wa.me/+5581987427790">Whatsapp</a>
             </li>
         </ul>
-    </head>
+    </header>
     <Main>
         <section class="container">
             <div class="nome">
                 <h1>Kai Pimenta</h1>
                 <h5>Front-End Developer</h5>
             </div>
-            <div id="arrow">
-                <i class="fa-solid fa-angle-down"></i>
+            <div onclick="displayAbaut()" id="arrow">
+                <i id="animation" class="fa-solid fa-angle-down"></i>
             </div>
-            <div id="about">
+            <div style="display: none;" id="about">
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus deserunt esse ducimus nam quasi, cum dolorum earum cupiditate, eius illum ratione, nemo perspiciatis! Alias labore, omnis et itaque perferendis commodi. Lorem ipsum dolor, sit amet consectetur
                     adipisicing elit. Molestias ducimus sequi tempora, error, voluptatum praesentium mollitia consectetur expedita possimus assumenda dignissimos deserunt excepturi veritatis debitis cum dolores fugit natus. Natus.
@@ -52,6 +52,16 @@
             </div>
         </section>
     </Main>
+
+    <script>
+        function displayAbaut() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate')
+            var display = document.getElementById('about');
+            display.classList.toggle('active')
+
+        }
+    </script>
 
 </body>
 

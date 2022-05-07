@@ -38,9 +38,91 @@ body {
 .form {
     width: 40%;
     margin: 0 auto;
+    margin-top: 30px;
 }
 
 .form button {
     width: 15%;
     margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 45px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 5px;
+}
+
+header {
+    /* border-bottom: solid 2px white; */
+    box-shadow: 1px 1px 10px 1px #FFF;
+    margin-bottom: 45px;
+}
+
+header ul li a:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.form button {
+    width: 15%;
+    padding: 5px 10px;
+    background-color: #c09717;
+    color: #FFF;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to right, #c09717, #9c551b);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -5px;
+}
+
+.form button:hover {
+    background-position: left bottom;
+    color: #FFF;
+}
+
+.form input {
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+.active {
+    display: block !important;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+#animation {
+    transition: rotate(180deg);
+    transition: 300ms;
 }
